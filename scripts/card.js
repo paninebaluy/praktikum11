@@ -63,15 +63,10 @@ class Card {
         } else {
             event.target.classList.remove('place-card__like-icon_liked');
             event.target.firstChild.textContent--;
-            console.log(this.likes);
             const myLikeIndex = this.likes.findIndex(findMyLike);
             this.likes.splice(myLikeIndex, 1);
-            console.log(myLikeIndex);            
-            console.log(this.likes);
             this.api.unlikeCard(this.id);
         }
-
-        
     }
 
     remove(event) {
