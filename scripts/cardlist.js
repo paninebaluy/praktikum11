@@ -26,7 +26,7 @@ class CardList {
                 container: document.getElementById('picture'),
             };
             const anotherCard = this.newCard(cardParams, this.functions, this.myData);
-            anotherCard.create();   
+            anotherCard.create();
             this.container.appendChild(anotherCard.card);                               
         }.bind(this)))
         .catch( (err) => console.log('Failed to render cards. Reason: ' + err) );

@@ -42,21 +42,36 @@ class Card {
                 this.openPic();
             }
         });
+        console.log(this.likes.length); 
     }
 
     like(event) {
         event.target.style.outline = 'none';
+
+        const findMyLike = (obj) => {
+            if (obj._id === this.myId) {
+                return true;
+            }
+        }
+
         if (!event.target.classList.contains('place-card__like-icon_liked')) {
             event.target.classList.add('place-card__like-icon_liked');
             event.target.firstChild.textContent++;
             this.likes.push(1);
+            console.log(this.likes);
+            this.api.renderLikes(this.id, this.likes);
         } else {
             event.target.classList.remove('place-card__like-icon_liked');
             event.target.firstChild.textContent--;
-            this.likes.pop();
+            console.log(this.likes);
+            const myLikeIndex = this.likes.findIndex(findMyLike);
+            this.likes.splice(myLikeIndex, 1);
+            console.log(myLikeIndex);            
+            console.log(this.likes);
+            this.api.unlikeCard(this.id);
         }
 
-        this.api.renderLikes(this.id, this.likes);
+        
     }
 
     remove(event) {
