@@ -128,12 +128,23 @@ class Api {
         })
             .then((resp) => {
                 if (resp.ok) {
+                    console.log(id, likes)
                     return resp.json();
                 } else {
                     return Promise.reject;
                 }
             })
             .catch((err) => console.log('Could not render likes. Reason: ' + err));
+    }
+
+    unlikeCard(id) {
+        return fetch((this.serverUrl + this.cohortId + '/cards/like/' + id), {
+          method: 'DELETE',
+          headers: {
+            authorization: this.authToken,
+            'Content-Type': 'application/json'
+          }
+        })
     }
 
     changeAvatar(avatarUrl) {
