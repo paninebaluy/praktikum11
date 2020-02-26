@@ -10,7 +10,7 @@ import './style.css';
 'use strict';
 
 //variables
-const serverUrl = NODE_ENV === 'development' ? 'https://praktikum.tk/' : 'http://praktikum.tk/';
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/' : 'https://praktikum.tk/';
 
 const authData = {
   cohortId: 'cohort7',
