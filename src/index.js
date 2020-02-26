@@ -10,9 +10,11 @@ import './style.css';
 'use strict';
 
 //variables
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/' : 'https://praktikum.tk/';
+
 const authData = {
   cohortId: 'cohort7',
-  serverUrl: 'https://praktikum.tk/',
+  serverUrl: serverUrl,
   authToken: 'a23141ad-1fbc-473a-91ed-36b5b30ff7c4',
 };
 const myData = {
