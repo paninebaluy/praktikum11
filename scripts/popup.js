@@ -1,7 +1,7 @@
 'use strict';
 /* encompasses all popups: containing forms or just a large verdion of picture from card */
 
-class Popup {
+export default class Popup {
 
     constructor(popupData) {
         this.popupElement = popupData.element;
@@ -40,7 +40,7 @@ class Popup {
     } 
 }   
  
-class Form extends Popup {
+export class Form extends Popup {
 
     constructor(formData, functions) {
         super(formData);

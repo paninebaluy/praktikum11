@@ -1,7 +1,7 @@
 'use strict';
 /* manages data on card, e.g. title, picture, likes, delete icons */
 
-class Card {
+export default class Card {
 
     constructor(cardData, functions, myData) {
         this.api = cardData.api;
@@ -22,6 +22,7 @@ class Card {
         this.picturePopup = functions.popup({ element: document.getElementById('picture'), });
     }
 
+    //creates a new card from data
     create() {
         if (this.ownerId === this.myId) {
             this.card.querySelector('.place-card').classList.add('place-card__my-card');     //show trashbin icons on cards I created
@@ -45,6 +46,7 @@ class Card {
         console.log(this.likes.length); 
     }
 
+    //adds or removes a user's like from card
     like(event) {
         event.target.style.outline = 'none';
 
@@ -69,6 +71,7 @@ class Card {
         }
     }
 
+    //removes user's card from the page
     remove(event) {
         if (window.confirm('Вы уверены, что хотите удалить свою замечательную карточку?')) {
             this.api.deleteCard(this.id);
@@ -76,6 +79,7 @@ class Card {
         }
     }
 
+    //loads a large version of picture from card
     openPic() {
         this.picturePopup.open();
         const cardImageUrl = this.cardImage.style.backgroundImage.slice(4, -1).replace(/"/g, "");
