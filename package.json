@@ -1,5 +1,6 @@
 {
   "name": "sprint11_homework",
+  "homepage": "https://paninebaluy.github.io/praktikum11/",
   "version": "1.0.0",
   "description": "sprint 9 with webpack",
   "main": "index.js",
@@ -41,6 +42,5 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/paninebaluy/praktikum11/issues"
-  },
-  "homepage": "https://github.com/paninebaluy/praktikum11#readme"
+  }
 }
