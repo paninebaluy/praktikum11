@@ -133,7 +133,6 @@ export default class Api {
         })
             .then((resp) => {
                 if (resp.ok) {
-                    console.log(id, likes)
                     return resp.json();
                 } else {
                     return Promise.reject;

@@ -100,7 +100,6 @@ export class Form extends Popup {
         event.preventDefault();
         if (!this.submitButton.hasAttribute('disabled')) {
             if (this.form === document.forms.new) {
-                console.log(this);
                 this.container.addCard(event);
                 this.close(event);
                 this.submitButton.setAttribute('disabled', '');
