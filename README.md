@@ -1,6 +1,6 @@
 # Mesto
 ## EN
-    [на русском](#ru)
+[на русском](#ru)
 
 _v0.0.5 - http/https protocol autochange added for switching between development or production builds._
 
