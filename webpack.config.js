@@ -15,36 +15,36 @@ module.exports = {
         filename: '[name].[chunkhash].js'
     },
     module: {
-        rules: [{ // тут описываются правила
-            test: /\.js$/, // regexp, finds all JS files
-            use: { loader: "babel-loader" }, // all JS files are processed by babel-loader
-            exclude: /node_modules/
-            }, 
-            {
-                test: /\.(gif|png|jpe?g|ico|svg)$/i,
-                use: [
-                    'file-loader?name=./images/[name].[ext]',
-                    {
-                    loader: 'image-webpack-loader',
-                    options: {
-                        esModule: false,
-                    }
-                    },
-                ],
-            },
-            {
-                test: /\.css$/i,
-                use: [
-                                (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-                                'css-loader', 
-                                'postcss-loader'
+        rules: [
+                { // тут описываются правила
+                    test: /\.js$/, // regexp, finds all JS files
+                    use: { loader: "babel-loader" }, // all JS files are processed by babel-loader
+                    exclude: /node_modules/
+                }, 
+                {
+                    test: /\.(gif|png|jpe?g|ico|svg)$/i,
+                    use: [
+                        'file-loader?name=./images/[name].[ext]',
+                        {
+                            loader: 'image-webpack-loader',
+                            options: {
+                                esModule: false,
+                            }
+                        },
+                    ],
+                },
+                {
+                    test: /\.css$/i,
+                    use: [
+                            (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+                            'css-loader', 
+                            'postcss-loader'
                         ]
-            },
-            {
-                test: /\.(eot|ttf|woff|woff2)$/,
-                loader: 'file-loader?name=./src/vendor/[name].[ext]'
-            }
-            
+                },
+                {
+                    test: /\.(eot|ttf|woff|woff2)$/,
+                    loader: 'file-loader?name=./src/vendor/[name].[ext]'
+                }
             ]
         },
         plugins: [ 
@@ -69,5 +69,5 @@ module.exports = {
                 },
                 canPrint: true
             })
-            ]
+        ]
 };
