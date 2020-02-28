@@ -4,7 +4,7 @@
 
 _v0.0.5 - http/https protocol autochange added for switching between development or production builds._
 
-Mesto is a single page project, part of sprint 11 in [Yandex.Praktikum](https://yandex.ru/praktikum) study program.
+Mesto is a single page project, part of sprint 11 in [Yandex.Praktikum](https://praktikum.yandex.ru/profile/web-developer/) study program.
 It's an interactive web page for sharing pictures with short titles.
 
 ### It includes
@@ -19,7 +19,7 @@ Changes made to user info and card list are immediately committed to server.
 Pictures on cards may be opened and closed as separate popups (one at a time).
 
 ### This web site on GH Pages
-(https://paninebaluy.github.io/praktikum11/)
+https://paninebaluy.github.io/praktikum11/
 
 ### Note
 This is just a test project used to study Github and Webpack.
@@ -52,11 +52,11 @@ $> npm run dev
 
 _v0.0.5 - добавлена смена протокола в запросах - на http/https, в зависимости от билда (development/production)._
 
-Место &mdash; одностраничный проект, созданный в рамках спринта 11 учебной программы [Яндекс.Практикума](https://yandex.ru/praktikum).
+Место &mdash; одностраничный проект, созданный в рамках спринта 11 учебной программы [Яндекс.Практикума](https://praktikum.yandex.ru/profile/web-developer/).
 Это интерактивный сайт, пользователи которого могут делиться изображениями с кратким названием.
 
 ### Ссылка на сайт на GH-Pages
-(https://paninebaluy.github.io/praktikum11/)
+https://paninebaluy.github.io/praktikum11/
 
 ### Возможности сайта
 1. Профиль пользователя с именем и информацией, а также аватаром, который можно менять (пока лишь функцией).
