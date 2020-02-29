@@ -43,7 +43,6 @@ export default class Card {
                 this.openPic();
             }
         });
-        console.log(this.likes.length); 
     }
 
     //adds or removes a user's like from card
@@ -60,7 +59,6 @@ export default class Card {
             event.target.classList.add('place-card__like-icon_liked');
             event.target.firstChild.textContent++;
             this.likes.push(1);
-            console.log(this.likes);
             this.api.renderLikes(this.id, this.likes);
         } else {
             event.target.classList.remove('place-card__like-icon_liked');

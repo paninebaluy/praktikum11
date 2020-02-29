@@ -1,11 +1,11 @@
-import Api from '../scripts/api.js';
-import Card from '../scripts/card.js';
-import CardList from '../scripts/cardlist.js';
-import FormValidator from '../scripts/formvalidator.js';
-import Popup from '../scripts/popup.js';
-import { Form } from '../scripts/popup.js';
-import UserInfo from '../scripts/userinfo.js';
-import './style.css';
+import Api from './scripts/api.js';
+import Card from './scripts/card.js';
+import CardList from './scripts/cardlist.js';
+import FormValidator from './scripts/formvalidator.js';
+import Popup from './scripts/popup.js';
+import { Form } from './scripts/popup.js';
+import UserInfo from './scripts/userinfo.js';
+import './pages/style.css';
 
 'use strict';
 
