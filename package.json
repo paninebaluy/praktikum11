@@ -32,7 +32,7 @@
   "scripts": {
     "build": "rimraf dist && NODE_ENV=production webpack --mode production",
     "dev": "NODE_ENV=development webpack-dev-server --mode development --open --watch",
-    "deploy": "NODE_ENV=production gh-pages -d dist"
+    "deploy": "npm run build && scp -r ./dist/* paninebaluy-tech@84.201.133.185:/home/paninebaluy-tech/mesto-front-end"
   },
   "repository": {
     "type": "git",
