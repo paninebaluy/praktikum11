@@ -18,8 +18,8 @@ It's an interactive web page for sharing pictures with short titles.
 Changes made to user info and card list are immediately committed to server.
 Pictures on cards may be opened and closed as separate popups (one at a time).
 
-### This web site on GH Pages
-https://paninebaluy.github.io/praktikum11/
+### This web site:
+http://mestamno.ga/
 
 ### Note
 This is just a test project used to study Github and Webpack.
@@ -42,7 +42,6 @@ $> npm run dev
 + CSS
 + Git
 + Webpack
-+ GitHub Pages
 
 ### Further plans
 + Create a popup with a form for loading an avatar picture to server (API function ready)
@@ -55,8 +54,8 @@ _v1.0.0 - добавление новых карточек теперь прои
 Место &mdash; одностраничный проект, созданный в рамках спринта 11 учебной программы [Яндекс.Практикума](https://praktikum.yandex.ru/profile/web-developer/).
 Это интерактивный сайт, пользователи которого могут делиться изображениями с кратким названием.
 
-### Ссылка на сайт на GH-Pages
-https://paninebaluy.github.io/praktikum11/
+### Ссылка на сайт:
+http://mestamno.ga/
 
 ### Возможности сайта
 1. Профиль пользователя с именем и информацией, а также аватаром, который можно менять (пока лишь функцией).
@@ -91,7 +90,6 @@ $> npm run dev
 + CSS
 + Git
 + Webpack
-+ GitHub Pages
 
 ### Ближайшие планы
 + Сверстать попап с формой для загрузки изображения для аватара (готова функция в классе API).
