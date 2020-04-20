@@ -2,7 +2,7 @@
 ## EN
 [на русском](#ru)
 
-_v0.0.5 - http/https protocol autochange added for switching between development or production builds._
+_v1.0.0 - reversed card addition - new cards add from the top_
 
 Mesto is a single page project, part of sprint 11 in [Yandex.Praktikum](https://praktikum.yandex.ru/profile/web-developer/) study program.
 It's an interactive web page for sharing pictures with short titles.
@@ -50,7 +50,7 @@ $> npm run dev
 # Mesto
 ## RU
 
-_v0.0.5 - добавлена смена протокола в запросах - на http/https, в зависимости от билда (development/production)._
+_v1.0.0 - добавление новых карточек теперь происходит сверху, а не снизу_
 
 Место &mdash; одностраничный проект, созданный в рамках спринта 11 учебной программы [Яндекс.Практикума](https://praktikum.yandex.ru/profile/web-developer/).
 Это интерактивный сайт, пользователи которого могут делиться изображениями с кратким названием.
